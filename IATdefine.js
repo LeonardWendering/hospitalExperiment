@@ -1,9 +1,9 @@
-define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualtrics/quiat9.js'], function(APIConstructor, iatExtension){
+define(['pipAPI', 'https://baranan.github.io/minno-tasks/quiat8.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
 	return iatExtension({
 		category1 : {
-			name : 'Dunkelhäutige Menschen', //Will appear in the data.
+			name : 'Black people', //Will appear in the data.
 			title : {
 				media : {word : 'Black people'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
@@ -23,7 +23,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualt
 		category2 :	{
 			name : 'White people', //Will appear in the data.
 			title : {
-				media : {word : 'Hellhäutige Menschen'}, //Name of the category presented in the task.
+				media : {word : 'White people'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
