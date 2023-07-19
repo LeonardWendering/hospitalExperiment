@@ -30,9 +30,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			},
 			//When scoring, we will consider the compatible condition the pairing condition that requires response with one key to [category1,attribute1] and the other key to [category2,attribute2]
 			category1 : {
-				name : 'Black people', //Will appear in the data and in the default feedback message.
+				name : 'Dunkelhäutige Menschen', //Will appear in the data and in the default feedback message.
 				title : {
-					media : {word : 'Black people'}, //Name of the category presented in the task.
+					media : {word : 'Dunkelhäutige Menschen'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				},
@@ -48,9 +48,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
 			},
 			category2 :	{
-				name : 'White people', //Will appear in the data and in the default feedback message.
+				name : 'Hellhäutige Menschen', //Will appear in the data and in the default feedback message.
 				title : {
-					media : {word : 'White people'}, //Name of the category presented in the task.
+					media : {word : 'Hellhäutige Menschen'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				},
@@ -112,8 +112,6 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				image : '/implicit/user/yba/pipexample/biat/images/'
 			},
 
-			//nBlocks : 7, This is not-supported anymore. If you want a 5-block IAT, change blockSecondCombined_nTrials to 0.
-			
 			////In each block, we can include a number of mini-blocks, to reduce repetition of same group/response.
 			////If you set the number of trials in any block to 0, that block will be skipped.
 			blockAttributes_nTrials : 20,
@@ -128,7 +126,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			blockSwitch_nMiniBlocks : 7,
 
 			//Should we randomize which attribute is on the right, and which on the left?
-			randomAttSide : false, // Accepts 'true' and 'false'. If false, then attribute2 on the right.
+			randomAttSide : true, // Accepts 'true' and 'false'. If false, then attribute2 on the right.
 
 			//Should we randomize which category is on the right first?
 			randomBlockOrder : true, //Accepts 'true' and 'false'. If false, then category1 on the left first.
@@ -153,8 +151,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			fontColor : '#000000', //The default color used for printed messages.
 			
 			//Text and style for key instructions displayed about the category labels.
-			leftKeyText : 'Press "E" for', 
-			rightKeyText : 'Press "I" for', 
+			leftKeyText : 'Drücken Sie "E", um', 
+			rightKeyText : 'Drücken Sie "I", um', 
 			keysCss : {'font-size':'0.8em', 'font-family':'courier', color:'#000000'},
 			//Text and style for the separator between the top and bottom category labels.
 			orText : 'or', 
@@ -162,8 +160,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			
 			instWidth : 99, //The width of the instructions stimulus
 			
-			finalText : 'Press space to continue to the next task', 
-			finalTouchText : 'Touch the bottom green area to continue to the next task',
+			finalText : 'Drücken Sie die Leertaste, um zum nächsten Teil zu gelangen.', 
+			finalTouchText : 'Drücken Sie auf den unteren grünen Bereich, um zum nächsten Teil zu gelangen.',
 
 			touchMaxStimulusWidth : '50%', 
 			touchMaxStimulusHeight : '50%', 
@@ -177,12 +175,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>'+
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Lege den linken Finger auf die <b>E</b> Taste für Items die zu der Kategorie zählen <font color="#0000ff">leftAttribute.</font>' +
+				'<br/>Lege den rechten Finger auf die <b>I</b> Taste für Items die zu der Kategorie zählen <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
+				'Wenn du einen Fehler machst, wird ein roter <font color="#ff0000"><b>X</b></font> erscheinen. ' +
+				'Drücke die andere Taste zum Fortfahren.<br/>' +
+				'<u>Antworte so schnell wie möglich</u> und gleichzeitig exakt.<br/><br/></p>'+
+				'<p align="center">Drücke den <b>space bar</b> wenn du bereit zu starten bist.</font></p></div>',
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -190,13 +188,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Put a left finger over the the <b>left</b> green area for items that belong to the category <font color="#0000ff">leftAttribute</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/>',
-						'Items will appear one at a time.<br/>',
+						'Lege den linken Finger auf den <b>left</b> grünen Bereich für Items die zu der Kategorie zählen <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Lege den rechten Finger auf den <b>right</b> grünen Bereich für Items die zu der Kategorie zählen <font color="#0000ff">rightAttribute</font>.<br/>',
+						'Die Items erscheinen einzeln.<br/>',
 						'<br/>',
-						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.',
+						'Wenn du einen Fehler machst, wird ein roter  <font color="#ff0000"><b>X</b></font> erscheinen. Berühre dann die andere Seite. <u>Antworte so schnell wie möglich</u> und gleichzeitig exakt..',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Berühre den <b>lower </b> grünen Bereich zum Starten.</p>',
 				'</div>'
 			].join('\n'),
 
