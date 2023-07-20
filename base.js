@@ -204,16 +204,17 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 			].join('\n'),
 
-			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +		
+				'<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#336600">leftCategory</font>. ' +
-				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#336600">rightCategory</font>.<br/>' +
-				'Items will appear one at a time.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>'+
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Legen Sie einen linken Finger auf die <b>E</b>-Taste für Elemente, die zur Kategorie <font color="#336600">leftCategory</font> gehören. ' +
+				'<br/>Legen Sie einen rechten Finger auf die <b>I</b>-Taste für Elemente, die zur Kategorie <font color="#336600">rightCategory</font> gehören.<br/>' +
+				'Die Elemente erscheinen einzeln.<br/><br/>' +
+				'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. ' +
+				'Drücken Sie die andere Taste, um fortzufahren.<br/>' +
+				'<u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/><br/></p>'+
+				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit sind zu starten.</font></p></div>',
+
 			instCategoriesPracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -221,26 +222,28 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Put a left finger over the <b>left</b> green area for items that belong to the category <font color="#336600">leftCategory</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#336600">rightCategory</font>.<br/>',
-						'Items will appear one at a time.<br/>',
+						'Legen Sie einen linken Finger über den <b>linken</b> grünen Bereich für Elemente, die zur Kategorie <font color="#336600">leftCategory</font> gehören.<br/>',
+						'Legen Sie einen rechten Finger über den <b>rechten</b> grünen Bereich für Elemente, die zur Kategorie <font color="#336600">rightCategory</font> gehören.<br/>',
+						'Die Elemente erscheinen einzeln.<br/>',
 						'<br/>',
-						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.',
+						'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. Berühren Sie die andere Seite. <u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.'
+
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Berühren Sie den <b>lower </b> grünen Bereich zum Starten.</p>',
 				'</div>'
 			].join('\n'),
 
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Use the <b>E</b> key for <font color="#336600">leftCategory</font> and for <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Use the <b>I</b> key for <font color="#336600">rightCategory</font> and for  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Each item belongs to only one category.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' + 
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Benutzen Sie die <b>E</b>-Taste für <font color="#336600">leftCategory</font> und für <font color="#0000ff">leftAttribute</font>.<br/>' +
+				'Benutzen Sie die <b>I</b>-Taste für <font color="#336600">rightCategory</font> und für <font color="#0000ff">rightAttribute</font>.<br/>' +
+				'Jedes Element gehört nur zu einer Kategorie.<br/><br/>' +
+				'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. ' +
+				'Drücken Sie die andere Taste, um fortzufahren.<br/>' + 
+				'<u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/><br/></p>' +
+				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit sind zu starten.</font></p></div>',
+
 			instFirstCombinedTouch:[
 				'<div>',
 					'<p align="center">',
@@ -249,23 +252,24 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<br/>',
 					'<br/>',
 					'<p align="left" style="margin-left:5px">',
-						'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items and for <font color="#0000ff">leftAttribute</font>.</br>',
-						'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items and for <font color="#0000ff">rightAttribute</font>.</br>',
-							'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.</br>',
+						'Legen Sie einen linken Finger über den <b>linken</b> grünen Bereich für Elemente der <font color="#336600">linkenKategorie</font> und für <font color="#0000ff">leftAttribute</font>.</br>',
+						'Legen Sie einen rechten Finger über den <b>rechten</b> grünen Bereich für Elemente der <font color="#336600">rechtenKategorie</font> und für <font color="#0000ff">rightAttribute</font>.</br>',
+						'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. Berühren Sie die andere Seite. <u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.</br>',
 						'</p>',
-						'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+						'<p align="center">Berühren Sie den <b>unteren</b> grünen Bereich, um zu starten.</p>',
 				'</div>'
 			].join('\n'),
 
 			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'This is the same as the previous part.<br/>' +
-				'Use the <b>E</b> key for <font color="#336600">leftCategory</font> and for <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Use the <b>I</b> key for <font color="#336600">rightCategory</font> and for  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Each item belongs to only one category.<br/><br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Dies ist das Gleiche wie der vorherige Teil.<br/>' +
+				'Benutzen Sie die <b>E</b>-Taste für <font color="#336600">leftCategory</font> und für <font color="#0000ff">leftAttribute</font>.<br/>' +
+				'Benutzen Sie die <b>I</b>-Taste für <font color="#336600">rightCategory</font> und für <font color="#0000ff">rightAttribute</font>.<br/>' +
+				'Jedes Element gehört nur zu einer Kategorie.<br/><br/>' +
+				'<u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/><br/></p>' +
+				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit sind zu starten.</font></p></div>',
+
 			instSecondCombinedTouch:[
 				'<div>',
 					'<p align="center"><u>Part blockNum of nBlocks</u></p>',
@@ -273,23 +277,24 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<br/>',
 
 					'<p align="left" style="margin-left:5px">',
-						'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items and for <font color="#0000ff">leftAttribute</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items and for <font color="#0000ff">rightAttribute</font>.<br/>',
+						'Legen Sie einen linken Finger über den <b>linken</b> grünen Bereich für Elemente der <font color="#336600">linkenKategorie</font> und für <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Legen Sie einen rechten Finger über den <b>rechten</b> grünen Bereich für Elemente der <font color="#336600">rechtenKategorie</font> und für <font color="#0000ff">rightAttribute</font>.<br/>',
 						'<br/>',
-						'<u>Go as fast as you can</u> while being accurate.<br/>',
+						'<u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/>',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Berühren Sie den <b>lower </b> grünen Bereich zum Starten.</p>',
 				'</div>'
 			].join('\n'),
 
 			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'<b>Watch out, the labels have changed position!</b><br/>' +
-				'Put the left finger on the <b>E</b> key for <font color="#336600">leftCategory</font>.<br/>' +
-				'Put the right finger on the <b>I</b> key for <font color="#336600">rightCategory</font>.<br/><br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'<b>Achtung, die Beschriftungen haben die Position gewechselt!</b><br/>' +
+				'Legen Sie den linken Finger auf die <b>E</b>-Taste für <font color="#336600">leftCategory</font>.<br/>' +
+				'Legen Sie den rechten Finger auf die <b>I</b>-Taste für <font color="#336600">rightCategory</font>.<br/><br/>' +
+				'<u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/><br/></p>' +
+				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit sind zu starten.</font></p></div>',
+
 			instSwitchCategoriesTouch: [
 				'<div>',
 					'<p align="center">',
@@ -298,11 +303,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
 						'Watch out, the labels have changed position!<br/>',
-							'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items.<br/>',
-							'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items.<br/>',
-							'Items will appear one at a time.',
+							'Legen Sie einen linken Finger über den <b>linken</b> grünen Bereich für Elemente der <font color="#336600">linkenKategorie</font>.<br/>',
+							'Legen Sie einen rechten Finger über den <b>rechten</b> grünen Bereich für Elemente der <font color="#336600">rechtenKategorie</font>.<br/>',
+							'Die Elemente erscheinen einzeln.',
 							'<br/>',
-							'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.<br/>',
+							'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. Berühren Sie die andere Seite. <u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/>',
 						'</p>',
 						'<p align="center">Touch the <b>lower </b> green area to start.</p>',
 				'</div>'
@@ -313,29 +318,27 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instThirdCombinedTouch : 'instFirstCombined', //this means that we're going to use the instFirstCombined property for the third combined block as well. You can change that.
 			instFourthCombinedTouch : 'instSecondCombined', //this means that we're going to use the instSecondCombined property for the fourth combined block as well. You can change that.
 
-			showDebriefing:false, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
-			//Texts for the trials that show the debriefing.
-			preDebriefingText : 'Press space to see your result', //Text in the trial that comes before showing the debriefing.
-			preDebriefingTouchText : 'Touch the bottom green area to see your result', //Touch version for the text in the trial that comes before showing the debriefing.
-			debriefingTextTop : 'Your result:', //Will be shown above the feedback text.
+			preDebriefingText : 'Drücken Sie die Leertaste, um Ihr Ergebnis zu sehen', //Text in the trial that comes before showing the debriefing.
+			preDebriefingTouchText : 'Berühren Sie den unteren grünen Bereich, um Ihr Ergebnis zu sehen', //Touch version for the text in the trial that comes before showing the debriefing.
+			debriefingTextTop : 'Ihr Ergebnis:', //Will be shown above the feedback text.
 			//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
 			//In Project Implicit's website, you can see that we added much text to explain that there is still much unknown about the meaning of these results.
 			//We strongly recommend that you provide all these details in the debriefing of the experiment.
-			debriefingTextBottom : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.  Press space to continue.', //Will be shown below the feedback text. 
-            debriefingTextBottomTouch : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.  Touch the green area to continue.',
+			debriefingTextBottom : 'Dieses Ergebnis ist keine endgültige Bewertung Ihrer Einstellungen. Es dient nur zu Bildungszwecken.  Drücken Sie die Leertaste, um fortzufahren.', //Will be shown below the feedback text. 
+	        debriefingTextBottomTouch : 'Dieses Ergebnis ist keine endgültige Bewertung Ihrer Einstellungen. Es dient nur zu Bildungszwecken.  Berühren Sie den grünen Bereich, um fortzufahren.',
 			//The default feedback messages for each cutoff -
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
 			//and categoryB is the name of the category that is found to be associated with attribute2.
-			fb_strong_Att1WithCatA_Att2WithCatB : 'Your responses suggested a strong automatic preference for categoryB over categoryA.',
-			fb_moderate_Att1WithCatA_Att2WithCatB : 'Your responses suggested a moderate automatic preference for categoryB over categoryA.',
-			fb_slight_Att1WithCatA_Att2WithCatB : 'Your responses suggested a slight automatic preference for categoryB over categoryA.',
-			fb_equal_CatAvsCatB : 'Your responses suggested no automatic preference between categoryA and categoryB.',
-
+			fb_strong_Att1WithCatA_Att2WithCatB : 'Ihre Antworten deuten auf eine starke automatische Vorliebe für categoryB gegenüber categoryA hin.',
+			fb_moderate_Att1WithCatA_Att2WithCatB : 'Ihre Antworten deuten auf eine moderate automatische Vorliebe für categoryB gegenüber categoryA hin.',
+			fb_slight_Att1WithCatA_Att2WithCatB : 'Ihre Antworten deuten auf eine leichte automatische Vorliebe für categoryB gegenüber categoryA hin.',
+			fb_equal_CatAvsCatB : 'Ihre Antworten deuten auf keine automatische Vorliebe zwischen categoryA und categoryB hin.',
+	
 			//Error messages in the feedback
-			manyErrors: 'There were too many errors made to determine a result.',
-			tooFast: 'There were too many fast trials to determine a result.',
-			notEnough: 'There were not enough trials to determine a result.'
+			manyErrors: 'Es wurden zu viele Fehler gemacht, um ein Ergebnis zu ermitteln.',
+			tooFast: 'Es gab zu viele schnelle Versuche, um ein Ergebnis zu ermitteln.',
+			notEnough: 'Es gab nicht genug Versuche, um ein Ergebnis zu ermitteln.'
 		};
 
 		// extend the "current" object with the default
