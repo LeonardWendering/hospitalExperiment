@@ -337,6 +337,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		_.extend(piCurrent, _.defaults(options, iatObj));
 		_.extend(API.script.settings, options.settings);
 
+
         /**
         **** For Qualtrics
         */
