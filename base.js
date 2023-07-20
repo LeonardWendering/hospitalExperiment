@@ -70,42 +70,42 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			},
 			attribute1 :
 			{
-				name : 'Bad words',
+				name : 'Negative Wörter',
 				title : {
-					media : {word : 'Bad words'},
+					media : {word : 'Negative Wörter'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'awful'},
-					{word: 'failure'},
-					{word: 'agony'},
-					{word: 'hurt'},
-					{word: 'horrible'},
-					{word: 'terrible'},
-					{word: 'nasty'},
-					{word: 'evil'}
+					{word: 'furchtbar'},
+					{word: 'Versagen'},
+					{word: 'Leid'},
+					{word: 'verletzt'},
+					{word: 'furchtbar'},
+					{word: 'schrecklich'},
+					{word: 'fies'},
+					{word: 'böse'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 			},
 			attribute2 :
 			{
-				name : 'Good words',
+				name : 'Positive Wörter',
 				title : {
-					media : {word : 'Good words'},
+					media : {word : 'Positive Wörter'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'laughter'},
-					{word: 'happy'},
-					{word: 'glorious'},
-					{word: 'joy'},
-					{word: 'wonderful'},
-					{word: 'peace'},
-					{word: 'pleasure'},
-					{word: 'love'}
+					{word: 'lachen'},
+					{word: 'fröhlich'},
+					{word: 'herrlich'},
+					{word: 'Freude'},
+					{word: 'wunderbar'},
+					{word: 'Frieden'},
+					{word: 'Vergnügen'},
+					{word: 'Liebe'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
