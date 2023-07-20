@@ -178,14 +178,15 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// leftCategory, rightCategory, leftAttribute and rightAttribute, blockNum, nBlocks.
 			// Notice that this is HTML text.
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>'+
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Legen Sie einen linken Finger auf die <b>E</b>-Taste für Elemente, die zur Kategorie <font color="#0000ff">leftAttribute.</font> gehören.' +
+				'<br/>Legen Sie einen rechten Finger auf die <b>I</b>-Taste für Elemente, die zur Kategorie <font color="#0000ff">>rightAttribute</font> gehören.<br/><br/>' +
+				'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. ' +
+				'Drücken Sie die andere Taste, um fortzufahren.<br/>' +
+				'<u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/><br/></p>'+
+				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit sind zu starten.</font></p></div>',
+
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -193,13 +194,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Put a left finger over the the <b>left</b> green area for items that belong to the category <font color="#0000ff">leftAttribute</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/>',
-						'Items will appear one at a time.<br/>',
+						'Legen Sie einen linken Finger über den <b>linken</b> grünen Bereich für Elemente, die zur Kategorie <font color="#0000ff">leftAttribute</font> gehören.<br/>',
+						'Legen Sie einen rechten Finger über den <b>rechten</b> grünen Bereich für Elemente, die zur Kategorie <font color="#0000ff">rightAttribute</font> gehören.<br/>',
+						'Die Elemente erscheinen einzeln.<br/>',
 						'<br/>',
-						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.',
+						'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. Berühren Sie die andere Seite. <u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.'
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Berühren Sie den <b>lower </b> grünen Bereich zum starten.</p>',
 				'</div>'
 			].join('\n'),
 
