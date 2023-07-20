@@ -190,7 +190,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
-						'<u>Part blockNum of nBlocks</u>',
+						'<u>Teil blockNum of nBlocks</u>',
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
@@ -218,7 +218,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instCategoriesPracticeTouch: [
 				'<div>',
 					'<p align="center">',
-						'<u>Part blockNum of nBlocks</u>',
+						'<u>Teil blockNum of nBlocks</u>',
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
@@ -247,7 +247,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instFirstCombinedTouch:[
 				'<div>',
 					'<p align="center">',
-						'<u>Part blockNum of nBlocks</u>',
+						'<u>Teil blockNum of nBlocks</u>',
 					'</p>',
 					'<br/>',
 					'<br/>',
@@ -272,7 +272,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 			instSecondCombinedTouch:[
 				'<div>',
-					'<p align="center"><u>Part blockNum of nBlocks</u></p>',
+					'<p align="center"><u>Teil blockNum of nBlocks</u></p>',
 					'<br/>',
 					'<br/>',
 
@@ -298,7 +298,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instSwitchCategoriesTouch: [
 				'<div>',
 					'<p align="center">',
-						'<u>Part blockNum of nBlocks</u>',
+						'<u>Teil blockNum of nBlocks</u>',
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
