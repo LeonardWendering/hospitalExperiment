@@ -83,7 +83,7 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 		
 		base_url : {//Where are your images at?
 			image : 'https://baranan.github.io/minno-tasks/images/'
-		}
+		},
 		//nBlocks : 7, This is not-supported anymore. If you want a 5-block IAT, change blockSecondCombined_nTrials to 0.
 		////In each block, we can include a number of mini-blocks, to reduce repetition of same group/response.
 		////If you set the number of trials in any block to 0, that block will be skipped.
