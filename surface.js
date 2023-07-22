@@ -97,7 +97,7 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 		blockSecondCombined_nMiniBlocks : 10, 
 		blockSwitch_nTrials : 28,
 		blockSwitch_nMiniBlocks : 7,
-		isTouch : False,
+		isTouch : True,
 	
 
 		//Should we randomize which attribute is on the right, and which on the left?
