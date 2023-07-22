@@ -36,8 +36,51 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
     			{image : 'ym5.jpg'}			], 
 			//Stimulus css
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
-		},	
+		},
 
+		attribute1 :
+		{
+			name : 'Negative Wörter',
+			title : {
+				media : {word : 'Negative Wörter'},
+				css : {color:'#0000FF','font-size':'1.8em'},
+				height : 4 //Used to position the "Or" in the combined block.
+			},
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+				{word: 'furchtbar'},
+				{word: 'Versagen'},
+				{word: 'Leid'},
+				{word: 'verletzt'},
+				{word: 'furchtbar'},
+				{word: 'schrecklich'},
+				{word: 'fies'},
+				{word: 'böse'}
+			],
+			//Stimulus css
+			stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+		},
+		attribute2 :
+		{
+			name : 'Positive Wörter',
+			title : {
+				media : {word : 'Positive Wörter'},
+				css : {color:'#0000FF','font-size':'1.8em'},
+				height : 4 //Used to position the "Or" in the combined block.
+			},
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+				{word: 'lachen'},
+				{word: 'fröhlich'},
+				{word: 'herrlich'},
+				{word: 'Freude'},
+				{word: 'wunderbar'},
+				{word: 'Frieden'},
+				{word: 'Vergnügen'},
+				{word: 'Liebe'}
+			],
+			//Stimulus css
+			stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+		},
+		
 		base_url : {//Where are your images at?
 			image : 'https://baranan.github.io/minno-tasks/images/'
 		} 
