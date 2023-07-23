@@ -80,6 +80,8 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 			//Stimulus css
 			stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 		},
+		leftKeyText : 'Press "E" for', 
+		rightKeyText : 'Press "I" for'
 
 		base_url : {//Where are your images at?
 			image : 'https://baranan.github.io/minno-tasks/images/'
