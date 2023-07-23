@@ -180,7 +180,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Legen Sie einen linken Finger auf die <b>E</b>-Taste für Elemente, die zur Kategorie <font color="#0000ff">leftAttribute.</font> gehören.' +
+				'Test 123 auf die <b>E</b>-Taste für Elemente, die zur Kategorie <font color="#0000ff">leftAttribute.</font> gehören.' +
 				'<br/>Legen Sie einen rechten Finger auf die <b>I</b>-Taste für Elemente, die zur Kategorie <font color="#0000ff">>rightAttribute</font> gehören.<br/><br/>' +
 				'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. ' +
 				'Drücken Sie die andere Taste, um fortzufahren.<br/>' +
