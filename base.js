@@ -115,6 +115,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				image : '/implicit/user/yba/pipexample/biat/images/'
 			},
 
+
 			//nBlocks : 7, This is not-supported anymore. If you want a 5-block IAT, change blockSecondCombined_nTrials to 0.
 			
 			////In each block, we can include a number of mini-blocks, to reduce repetition of same group/response.
@@ -142,12 +143,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			remindError : true,
 
 			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
-			'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. ' +
-			'Drücken Sie die andere Taste, um fortzufahren.<p/>',
+			'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
+			'Drücken Sie die andere Taste zum Fortfahren.<p/>',
 
 			remindErrorTextTouch : '<p align="center" style="font-size:"1.4em"; font-family:arial">' +
-			'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. ' +
-			'Berühren Sie die andere Seite, um fortzufahren.<p/>',
+			'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
+			'Berühren Sie die andere Seite zum Fortfahren.<p/>',
 
 			errorCorrection : true, //Should participants correct error responses?
 			errorFBDuration : 500, //Duration of error feedback display (relevant only when errorCorrection is false)
@@ -156,16 +157,16 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			fontColor : '#000000', //The default color used for printed messages.
 			
 			//Text and style for key instructions displayed about the category labels.
-			leftKeyText : 'Drücke "E" um', 
-			rightKeyText : 'Drücke "I" um', 
+			leftKeyText : 'Drücken Sie "E" um', 
+			rightKeyText : 'Drücken Sie "I" um', 
 			keysCss : {'font-size':'0.8em', 'font-family':'courier', color:'#000000'},
 			//Text and style for the separator between the top and bottom category labels.
-			orText : 'or', 
+			orText : 'oder', 
 			orCss : {'font-size':'1.8em', color:'#000000'},
 			
 			instWidth : 99, //The width of the instructions stimulus
             
-			finalText : 'Drücke Leertaste, um mit der nächsten Aufgabe weiterzumachen', 
+			finalText : 'Drücken Sie die Leertaste, um mit der nächsten Aufgabe fortzufahren.', 
 			finalTouchText : 'Berühren Sie den unteren grünen Bereich, um mit der nächsten Aufgabe fortzufahren',
 
 			touchMaxStimulusWidth : '50%', 
@@ -178,136 +179,130 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// leftCategory, rightCategory, leftAttribute and rightAttribute, blockNum, nBlocks.
 			// Notice that this is HTML text.
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Test 123 auf die <b>E</b>-Taste für Elemente, die zur Kategorie <font color="#0000ff">leftAttribute.</font> gehören.' +
-				'<br/>Legen Sie einen rechten Finger auf die <b>I</b>-Taste für Elemente, die zur Kategorie <font color="#0000ff">>rightAttribute</font> gehören.<br/><br/>' +
-				'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. ' +
-				'Drücken Sie die andere Taste, um fortzufahren.<br/>' +
-				'<u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/><br/></p>'+
-				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit sind zu starten.</font></p></div>',
-
+				'Drücken Sie mit einem Ihrer linken Finger auf Taste <b>E</b>, um folgende Kategorie auszuwählen: <font color="#0000ff">leftAttribute.</font>' +
+				'<br/>Drücken Sie mit einem Ihrer rechten Finger auf Taste <b>I</b>, um folgende Kategorie auszuwählen: <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
+				'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
+				'Drücken Sie die andere Taste zum Fortfahren.<br/>' +
+				'<u>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>'+
+				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit zu starten sind.</font></p></div>',
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
-						'<u>Teil blockNum of nBlocks</u>',
+						'<u>Part blockNum of nBlocks</u>',
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Legen Sie einen linken Finger über den <b>linken</b> grünen Bereich für Elemente, die zur Kategorie <font color="#0000ff">leftAttribute</font> gehören.<br/>',
-						'Legen Sie einen rechten Finger über den <b>rechten</b> grünen Bereich für Elemente, die zur Kategorie <font color="#0000ff">rightAttribute</font> gehören.<br/>',
-						'Die Elemente erscheinen einzeln.<br/>',
+						'Put a left finger over the the <b>left</b> green area for items that belong to the category <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/>',
+						'Items will appear one at a time.<br/>',
 						'<br/>',
-						'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. Berühren Sie die andere Seite. <u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.'
+						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.',
 					'</p>',
-					'<p align="center">Berühren Sie den <b>lower </b> grünen Bereich zum starten.</p>',
+					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
 				'</div>'
 			].join('\n'),
 
-			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +		
-				'<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
+			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
+				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Legen Sie einen linken Finger auf die <b>E</b>-Taste für Elemente, die zur Kategorie <font color="#336600">leftCategory</font> gehören. ' +
-				'<br/>Legen Sie einen rechten Finger auf die <b>I</b>-Taste für Elemente, die zur Kategorie <font color="#336600">rightCategory</font> gehören.<br/>' +
-				'Die Elemente erscheinen einzeln.<br/><br/>' +
-				'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. ' +
-				'Drücken Sie die andere Taste, um fortzufahren.<br/>' +
-				'<u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/><br/></p>'+
-				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit sind zu starten.</font></p></div>',
-
+				'Drücken Sie mit einem Ihrer linken Finger auf Taste <b>E</b>, um folgende Kategorie auszuwählen: <font color="#336600">leftCategory</font>. ' +
+				'<br/>Drücken Sie mit einem Ihrer rechten Finger auf Taste <b>I</b>, um folgende Kategorie auszuwählen: <font color="#336600">rightCategory</font>.<br/>' +
+				'Die Items werden Ihnen einzelnd angezeigt<br/><br/>' +
+				'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
+				'Drücken Sie die andere Taste zum Fortfahren<br/>' +
+				'<u>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>'+
+				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit zu starten sind.</font></p></div>',
 			instCategoriesPracticeTouch: [
 				'<div>',
 					'<p align="center">',
-						'<u>Teil blockNum of nBlocks</u>',
+						'<u>Part blockNum of nBlocks</u>',
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Legen Sie einen linken Finger über den <b>linken</b> grünen Bereich für Elemente, die zur Kategorie <font color="#336600">leftCategory</font> gehören.<br/>',
-						'Legen Sie einen rechten Finger über den <b>rechten</b> grünen Bereich für Elemente, die zur Kategorie <font color="#336600">rightCategory</font> gehören.<br/>',
-						'Die Elemente erscheinen einzeln.<br/>',
+						'Put a left finger over the <b>left</b> green area for items that belong to the category <font color="#336600">leftCategory</font>.<br/>',
+						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#336600">rightCategory</font>.<br/>',
+						'Items will appear one at a time.<br/>',
 						'<br/>',
-						'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. Berühren Sie die andere Seite. <u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.'
-
+						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.',
 					'</p>',
-					'<p align="center">Berühren Sie den <b>lower </b> grünen Bereich zum Starten.</p>',
+					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
 				'</div>'
 			].join('\n'),
 
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Benutzen Sie die <b>E</b>-Taste für <font color="#336600">leftCategory</font> und für <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Benutzen Sie die <b>I</b>-Taste für <font color="#336600">rightCategory</font> und für <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Jedes Element gehört nur zu einer Kategorie.<br/><br/>' +
-				'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. ' +
-				'Drücken Sie die andere Taste, um fortzufahren.<br/>' + 
-				'<u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/><br/></p>' +
-				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit sind zu starten.</font></p></div>',
-
+				'Benutzen Sie die Taste <b>E</b>, um die Kategorien <font color="#336600">leftCategory</font> und <font color="#0000ff">leftAttribute</font>  auszuwählen.<br/>' +
+				'Benutzen Sie die Taste <b>I</b>, um die Kategorien <font color="#336600">rightCategory</font> und  <font color="#0000ff">rightAttribute</font> auszuwählen.<br/>' +
+				'Jedes Item gehört nur zu einer Kategorie.<br/><br/>' +
+				'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
+				'Drücken Sie die andere Taste zum Fortfahren.<br/>' + 
+				'<u>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>' +
+				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit zu starten sind.</font></p></div>',
 			instFirstCombinedTouch:[
 				'<div>',
 					'<p align="center">',
-						'<u>Teil blockNum of nBlocks</u>',
+						'<u>Part blockNum of nBlocks</u>',
 					'</p>',
 					'<br/>',
 					'<br/>',
 					'<p align="left" style="margin-left:5px">',
-						'Legen Sie einen linken Finger über den <b>linken</b> grünen Bereich für Elemente der <font color="#336600">linkenKategorie</font> und für <font color="#0000ff">leftAttribute</font>.</br>',
-						'Legen Sie einen rechten Finger über den <b>rechten</b> grünen Bereich für Elemente der <font color="#336600">rechtenKategorie</font> und für <font color="#0000ff">rightAttribute</font>.</br>',
-						'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. Berühren Sie die andere Seite. <u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.</br>',
+						'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items and for <font color="#0000ff">leftAttribute</font>.</br>',
+						'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items and for <font color="#0000ff">rightAttribute</font>.</br>',
+							'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.</br>',
 						'</p>',
-						'<p align="center">Berühren Sie den <b>unteren</b> grünen Bereich, um zu starten.</p>',
+						'<p align="center">Touch the <b>lower </b> green area to start.</p>',
 				'</div>'
 			].join('\n'),
 
 			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Dies ist das Gleiche wie der vorherige Teil.<br/>' +
-				'Benutzen Sie die <b>E</b>-Taste für <font color="#336600">leftCategory</font> und für <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Benutzen Sie die <b>I</b>-Taste für <font color="#336600">rightCategory</font> und für <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Jedes Element gehört nur zu einer Kategorie.<br/><br/>' +
-				'<u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/><br/></p>' +
-				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit sind zu starten.</font></p></div>',
-
+				'This is the same as the previous part.<br/>' +
+				'Drücken Sie die Taste <b>E</b>, um Kategorie <font color="#336600">leftCategory</font> und <font color="#0000ff">leftAttribute</font> auszuwählen.<br/>' +
+				'Drücken Sie die Taste <b>I</b>, um Kategorie <font color="#336600">rightCategory</font> und <font color="#0000ff">rightAttribute</font> auszuwählen.<br/>' +
+				'Jedes Item gehört nur zu einer Kategorie<br/><br/>' +
+				'<u>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>' +
+				'<p align="center">Drücken Sie die <b>Leertaste</b>, um zu starten.</font></p></div>',
 			instSecondCombinedTouch:[
 				'<div>',
-					'<p align="center"><u>Teil blockNum of nBlocks</u></p>',
+					'<p align="center"><u>Part blockNum of nBlocks</u></p>',
 					'<br/>',
 					'<br/>',
 
 					'<p align="left" style="margin-left:5px">',
-						'Legen Sie einen linken Finger über den <b>linken</b> grünen Bereich für Elemente der <font color="#336600">linkenKategorie</font> und für <font color="#0000ff">leftAttribute</font>.<br/>',
-						'Legen Sie einen rechten Finger über den <b>rechten</b> grünen Bereich für Elemente der <font color="#336600">rechtenKategorie</font> und für <font color="#0000ff">rightAttribute</font>.<br/>',
+						'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items and for <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items and for <font color="#0000ff">rightAttribute</font>.<br/>',
 						'<br/>',
-						'<u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/>',
+						'<u>Go as fast as you can</u> while being accurate.<br/>',
 					'</p>',
-					'<p align="center">Berühren Sie den <b>lower </b> grünen Bereich zum Starten.</p>',
+					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
 				'</div>'
 			].join('\n'),
 
 			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
-				'<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
+				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'<b>Achtung, die Beschriftungen haben die Position gewechselt!</b><br/>' +
-				'Legen Sie den linken Finger auf die <b>E</b>-Taste für <font color="#336600">leftCategory</font>.<br/>' +
-				'Legen Sie den rechten Finger auf die <b>I</b>-Taste für <font color="#336600">rightCategory</font>.<br/><br/>' +
-				'<u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/><br/></p>' +
-				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit sind zu starten.</font></p></div>',
-
+				'<b>Achtung, die Kategorien haben ihre Position geändert!</b><br/>' +
+				'Drücken Sie mit einem Ihrer linken Finger auf Taste <b>E</b>, um Kategorie <font color="#336600">leftCategory</font> auszuwählen.<br/>' +
+				'Drücken Sie mit einem Ihrer rechten Finger auf Taste <b>I</b>, um Kategorie <font color="#336600">rightCategory</font> auszuwählen.<br/><br/>' +
+				'<u>>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>' +
+				'<p align="center">Drücken Sie die <b>Leertaste</b>, um zu starten.</font></p></div>',
 			instSwitchCategoriesTouch: [
 				'<div>',
 					'<p align="center">',
-						'<u>Teil blockNum of nBlocks</u>',
+						'<u>Part blockNum of nBlocks</u>',
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
 						'Watch out, the labels have changed position!<br/>',
-							'Legen Sie einen linken Finger über den <b>linken</b> grünen Bereich für Elemente der <font color="#336600">linkenKategorie</font>.<br/>',
-							'Legen Sie einen rechten Finger über den <b>rechten</b> grünen Bereich für Elemente der <font color="#336600">rechtenKategorie</font>.<br/>',
-							'Die Elemente erscheinen einzeln.',
+							'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items.<br/>',
+							'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items.<br/>',
+							'Items will appear one at a time.',
 							'<br/>',
-							'Wenn Sie einen Fehler machen, erscheint ein rotes <font color="#ff0000"><b>X</b></font>. Berühren Sie die andere Seite. <u>Gehen Sie so schnell wie möglich</u>, während Sie genau sind.<br/>',
+							'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.<br/>',
 						'</p>',
 						'<p align="center">Touch the <b>lower </b> green area to start.</p>',
 				'</div>'
@@ -318,27 +313,29 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instThirdCombinedTouch : 'instFirstCombined', //this means that we're going to use the instFirstCombined property for the third combined block as well. You can change that.
 			instFourthCombinedTouch : 'instSecondCombined', //this means that we're going to use the instSecondCombined property for the fourth combined block as well. You can change that.
 
-			preDebriefingText : 'Drücken Sie die Leertaste, um Ihr Ergebnis zu sehen', //Text in the trial that comes before showing the debriefing.
-			preDebriefingTouchText : 'Berühren Sie den unteren grünen Bereich, um Ihr Ergebnis zu sehen', //Touch version for the text in the trial that comes before showing the debriefing.
+			showDebriefing:false, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
+			//Texts for the trials that show the debriefing.
+			preDebriefingText : 'Drücken Sie die Leertaste, um Ihre Ergebnisse anzeigen zu lassen.', //Text in the trial that comes before showing the debriefing.
+			preDebriefingTouchText : 'Touch the bottom green area to see your result', //Touch version for the text in the trial that comes before showing the debriefing.
 			debriefingTextTop : 'Ihr Ergebnis:', //Will be shown above the feedback text.
 			//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
 			//In Project Implicit's website, you can see that we added much text to explain that there is still much unknown about the meaning of these results.
 			//We strongly recommend that you provide all these details in the debriefing of the experiment.
-			debriefingTextBottom : 'Dieses Ergebnis ist keine endgültige Bewertung Ihrer Einstellungen. Es dient nur zu Bildungszwecken.  Drücken Sie die Leertaste, um fortzufahren.', //Will be shown below the feedback text. 
-	        debriefingTextBottomTouch : 'Dieses Ergebnis ist keine endgültige Bewertung Ihrer Einstellungen. Es dient nur zu Bildungszwecken.  Berühren Sie den grünen Bereich, um fortzufahren.',
+			debriefingTextBottom : 'Dieses Ergebnis ist keine endgültige Bewertung Ihrer Einstellungen. Es wird nur zu Bildungszwecken bereitgestellt.  Drücken Sie die Leertaste, um fortzufahren.', //Will be shown below the feedback text. 
+           		debriefingTextBottomTouch : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.  Touch the green area to continue.',
 			//The default feedback messages for each cutoff -
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
 			//and categoryB is the name of the category that is found to be associated with attribute2.
-			fb_strong_Att1WithCatA_Att2WithCatB : 'Ihre Antworten deuten auf eine starke automatische Vorliebe für categoryB gegenüber categoryA hin.',
-			fb_moderate_Att1WithCatA_Att2WithCatB : 'Ihre Antworten deuten auf eine moderate automatische Vorliebe für categoryB gegenüber categoryA hin.',
-			fb_slight_Att1WithCatA_Att2WithCatB : 'Ihre Antworten deuten auf eine leichte automatische Vorliebe für categoryB gegenüber categoryA hin.',
-			fb_equal_CatAvsCatB : 'Ihre Antworten deuten auf keine automatische Vorliebe zwischen categoryA und categoryB hin.',
-	
+			fb_strong_Att1WithCatA_Att2WithCatB : 'Aus Ihren Antworten geht hervor, dass Sie automatisch die categoryB gegenüber der categoryA bevorzugen.',
+			fb_moderate_Att1WithCatA_Att2WithCatB : 'Ihre Antworten lassen darauf schließen, dass Sie moderat categoryB gegenüber der categoryA bevorzugen.',
+			fb_slight_Att1WithCatA_Att2WithCatB : 'Ihre Antworten lassen darauf schließen, dass Sie categoryB gegenüber der categoryA leicht bevorzugen.'',
+			fb_equal_CatAvsCatB : 'Ihre Antworten ließen keine automatische Präferenz zwischen categoryA und categoryB erkennen.',
+
 			//Error messages in the feedback
 			manyErrors: 'Es wurden zu viele Fehler gemacht, um ein Ergebnis zu ermitteln.',
-			tooFast: 'Es gab zu viele schnelle Versuche, um ein Ergebnis zu ermitteln.',
-			notEnough: 'Es gab nicht genug Versuche, um ein Ergebnis zu ermitteln.'
+			tooFast: 'Ihre Antworten waren zu schnell, um ein Ergebnis zu ermitteln.',
+			notEnough: 'Es gab nicht genügend Versuche, um ein Ergebnis zu ermitteln.'
 		};
 
 		// extend the "current" object with the default
