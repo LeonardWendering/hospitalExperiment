@@ -182,7 +182,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Drücken Sie mit einem linken Finger auf Taste <b>E</b>, um folgende Kategorie auszuwählen: <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>Drücken Sie mit einem rechten Finger auf Taste <b>I</b> Tasten, um folgende Kategorie auszuwählen: <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
+				'<br/>Drücken Sie mit einem rechten Finger auf Taste <b>I</b> , um folgende Kategorie auszuwählen: <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
 				'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
 				'Drücken Sie die andere Taste zum Fortfahren.<br/>' +
 				'<u>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>'+
@@ -207,11 +207,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Legen Sie einen linken Finger auf <b>E</b> Tasten, die zu folgender Kategorie gehören: <font color="#336600">leftCategory</font>. ' +
-				'<br/>Legen Sie einen rechten Finger auf <b>I</b> Tasten, die zu folgender Kategorie gehören: <font color="#336600">rightCategory</font>.<br/>' +
+				'Drücken Sie mit einem linken Finger auf Taste <b>E</b> , um folgende Kategorie auszuwählen: <font color="#336600">leftCategory</font>. ' +
+				'<br/>Drücken Sie mit einem rechten Finger auf Taste <b>I</b> , um folgende Kategorie auszuwählen: <font color="#336600">rightCategory</font>.<br/>' +
 				'Die Items werden Ihnen einzelnd angezeigt<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' +
+				'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
+				'Drücken Sie die andere Taste zum Fortfahren<br/>' +
 				'<u>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>'+
 				'<p align="center">Drücken Sie <b>space bar</b> , wenn Sie bereit zu starten sind.</font></p></div>',
 			instCategoriesPracticeTouch: [
@@ -234,8 +234,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Benutzen Sie die <b>E</b> Taste für die Kategorien <font color="#336600">leftCategory</font> und <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Benutzen Sie die <b>I</b> Taste für die Kategorien <font color="#336600">rightCategory</font> und  <font color="#0000ff">rightAttribute</font>.<br/>' +
+				'Benutzen Sie die Taste <b>E</b> , um die Kategorien <font color="#336600">leftCategory</font> und <font color="#0000ff">leftAttribute</font>  auszuwählen.<br/>' +
+				'Benutzen Sie die Taste <b>I</b> , um die Kategorien <font color="#336600">rightCategory</font> und  <font color="#0000ff">rightAttribute</font> auszuwählen.<br/>' +
 				'Jedes Item gehört nur zu einer Kategorie.<br/><br/>' +
 				'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
 				'Drücken Sie die andere Taste zum Fortfahren.<br/>' + 
