@@ -210,8 +210,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Legen Sie einen linken Finger auf <b>E</b> Tasten, die zu folgender Kategorie gehören: <font color="#336600">leftCategory</font>. ' +
 				'<br/>Legen Sie einen rechten Finger auf <b>I</b> Tasten, die zu folgender Kategorie gehören: <font color="#336600">rightCategory</font>.<br/>' +
 				'Die Items werden Ihnen einzelnd angezeigt<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' +
+				'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
+				'Drücken Sie die andere Seite zum Fortfahren.<br/>' +
 				'<u>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>'+
 				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit zu starten sind.</font></p></div>',
 			instCategoriesPracticeTouch: [
@@ -285,11 +285,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'<b>Watch out, the labels have changed position!</b><br/>' +
-				'Put the left finger on the <b>E</b> key for <font color="#336600">leftCategory</font>.<br/>' +
-				'Put the right finger on the <b>I</b> key for <font color="#336600">rightCategory</font>.<br/><br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'<b>Achtung, die Kategorien haben ihre Position geändert!</b><br/>' +
+				'Drücken Sie mit dem linken Finger Taste <b>E</b> für Kategorie <font color="#336600">leftCategory</font>.<br/>' +
+				'Drücken Sie mit dem rechten Finger Taste <b>I</b> für Kategorie <font color="#336600">rightCategory</font>.<br/><br/>' +
+				'<u>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>' +
+				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit zu starten sind.</font></p></div>',
 			instSwitchCategoriesTouch: [
 				'<div>',
 					'<p align="center">',
