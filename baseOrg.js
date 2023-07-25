@@ -234,8 +234,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Benutzen Sie die Taste <b>E</b>, um die Kategorien <font color="#336600">leftCategory</font> und <font color="#0000ff">leftAttribute</font>  auszuwählen.<br/>' +
-				'Benutzen Sie die Taste <b>I</b>, um die Kategorien <font color="#336600">rightCategory</font> und  <font color="#0000ff">rightAttribute</font> auszuwählen.<br/>' +
+				'Benutzen Sie die Taste <b>E</b>, um die Kategorien <font color="#336600">leftCategory</font> und <font color="#0000ff">leftAttribute</font>.<br/>' +
+				'Benutzen Sie die Taste <b>I</b>, um die Kategorien <font color="#336600">rightCategory</font> und  <font color="#0000ff">rightAttribute</font>.<br/>' +
 				'Jedes Item gehört nur zu einer Kategorie.<br/><br/>' +
 				'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
 				'Drücken Sie die andere Taste zum Fortfahren.<br/>' + 
@@ -261,8 +261,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'This is the same as the previous part.<br/>' +
-				'Drücken Sie die Taste <b>E</b>, um Kategorie <font color="#336600">leftCategory</font> und <font color="#0000ff">leftAttribute</font> auszuwählen.<br/>' +
-				'Drücken Sie die Taste <b>I</b>, um Kategorie <font color="#336600">rightCategory</font> und <font color="#0000ff">rightAttribute</font> auszuwählen.<br/>' +
+				'Drücken Sie die Taste <b>E</b>, um Kategorie <font color="#336600">leftCategory</font> und <font color="#0000ff">leftAttribute</font>.<br/>' +
+				'Drücken Sie die Taste <b>I</b>, um Kategorie <font color="#336600">rightCategory</font> und <font color="#0000ff">rightAttribute</font>.<br/>' +
 				'Jedes Item gehört nur zu einer Kategorie<br/><br/>' +
 				'<u>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>' +
 				'<p align="center">Drücken Sie die <b>Leertaste</b>, um zu starten.</font></p></div>',
@@ -286,8 +286,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'<b>Achtung, die Kategorien haben ihre Position geändert!</b><br/>' +
-				'Drücken Sie mit einem Ihrer linken Finger auf Taste <b>E</b>, um Kategorie <font color="#336600">leftCategory</font> auszuwählen.<br/>' +
-				'Drücken Sie mit einem Ihrer rechten Finger auf Taste <b>I</b>, um Kategorie <font color="#336600">rightCategory</font> auszuwählen.<br/><br/>' +
+				'Drücken Sie mit einem Ihrer linken Finger auf Taste <b>E</b>, um Kategorie <font color="#336600">leftCategory</font>.<br/>' +
+				'Drücken Sie mit einem Ihrer rechten Finger auf Taste <b>I</b>, um Kategorie <font color="#336600">rightCategory</font>.<br/><br/>' +
 				'<u>>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>' +
 				'<p align="center">Drücken Sie die <b>Leertaste</b>, um zu starten.</font></p></div>',
 			instSwitchCategoriesTouch: [
@@ -321,8 +321,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
 			//In Project Implicit's website, you can see that we added much text to explain that there is still much unknown about the meaning of these results.
 			//We strongly recommend that you provide all these details in the debriefing of the experiment.
-			debriefingTextBottom : 'Dieses Ergebnis ist keine endgültige Bewertung Ihrer Einstellungen. Es wird nur zu Bildungszwecken bereitgestellt.  Drücken Sie die Leertaste, um fortzufahren.', //Will be shown below the feedback text. 
-           		debriefingTextBottomTouch : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.  Touch the green area to continue.',
+			debriefingTextBottom : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.  Press space to continue.', //Will be shown below the feedback text. 
+            debriefingTextBottomTouch : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.  Touch the green area to continue.',
 			//The default feedback messages for each cutoff -
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
