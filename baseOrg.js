@@ -144,11 +144,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-			'Drücke die andere Taste zum fortfahren.<p/>',
+			'Drücken Sie die andere Taste zum fortfahren.<p/>',
 
 			remindErrorTextTouch : '<p align="center" style="font-size:"1.4em"; font-family:arial">' +
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-			'Touch the other side to continue.<p/>',
+			'Berühren Sie die andere Seite zum Fortfahren.<p/>',
 
 			errorCorrection : true, //Should participants correct error responses?
 			errorFBDuration : 500, //Duration of error feedback display (relevant only when errorCorrection is false)
@@ -161,13 +161,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			rightKeyText : 'Drücke "I" um', 
 			keysCss : {'font-size':'0.8em', 'font-family':'courier', color:'#000000'},
 			//Text and style for the separator between the top and bottom category labels.
-			orText : 'or', 
+			orText : 'oder', 
 			orCss : {'font-size':'1.8em', color:'#000000'},
 			
 			instWidth : 99, //The width of the instructions stimulus
             
-			finalText : 'Press space to continue to the next task', 
-			finalTouchText : 'Touch the bottom green area to continue to the next task',
+			finalText : 'Drücken Sie die Leertaste, um mit der nächsten Aufgabe fortzufahren.', 
+			finalTouchText : 'Berühren Sie den unteren grünen Bereich, um mit der nächsten Aufgabe fortzufahren',
 
 			touchMaxStimulusWidth : '50%', 
 			touchMaxStimulusHeight : '50%', 
@@ -181,12 +181,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>'+
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Drücken Sie mit einem Ihrer linken Finger auf die <b>E</b> Taste für Items, die zur Kategorie <font color="#0000ff">leftAttribute</font> gehören.' +
+				'<br/>Drücken Sie mit einem Ihrer rechten Finger auf die <b>I</b> Taste für Items, die zur Kategorie <font color="#0000ff">rightAttribute</font><br/>gehören.<br/> ' +
+				'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
+				'Drücken Sie die andere Taste zum fortfahren.<br/>' +
+				'<u>Arbeiten Sie so schnell wie möglich,</u> ohne Fehler zu machen.<br/><br/></p>'+
+				'<p align="center">Drücken Sie die <b>space bar</b> , wenn Sie bereit zu starten sind.</font></p></div>',
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -194,7 +194,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Put a left finger over the the <b>left</b> green area for items that belong to the category <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Drücken Sie mit einem Ihrer linken Finger auf den <b>left</b> grünen Bereich für Items, die zur Kategorie <font color="#0000ff">leftAttribute</font> gehören.<br/>',
 						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/>',
 						'Items will appear one at a time.<br/>',
 						'<br/>',
@@ -207,13 +207,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#336600">leftCategory</font>. ' +
-				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#336600">rightCategory</font>.<br/>' +
-				'Items will appear one at a time.<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-				'Press the other key to continue.<br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>'+
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Drücken Sie mit einem Ihrer linken Finger auf die <b>E</b> Taste für Items, die zur Kategorie <font color="#336600">leftCategory</font>  gehören. ' +
+				'<br/> Drücken Sie mit einem Ihrer rechten FInger auf die <b>I</b> Taste für Items, die zur Kategorie <font color="#336600">rightCategory</font> gehören.<br/>' +
+				'Die Items werden einzeln nacheinander angezeigt.<br/><br/>' +
+				'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
+				'Drücken Sie die andere Taste zum fortfahren.<br/>' +
+'<u>Ar				'<u>Arbeiten Sie so schnell wie möglich,</u> ohne Fehler zu machen.<br/><br/></p>'+
+				'<p align="center">Drücken Sie die <b>space bar</b> , wenn Sie bereit zu starten sind.</font></p></div>',
 			instCategoriesPracticeTouch: [
 				'<div>',
 					'<p align="center">',
