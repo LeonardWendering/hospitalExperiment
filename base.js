@@ -234,8 +234,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Benutzen Sie die <b>E</b> Taste für die Kategorien <font color="#336600">leftCategory</font> und <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Benutzen Sie die <b>I</b> Taste für die Kategorien <font color="#336600">rightCategory</font> und  <font color="#0000ff">rightAttribute</font>.<br/>' +
+				'Benutzen Sie die Taste <b>E</b> für die Kategorien <font color="#336600">leftCategory</font> und <font color="#0000ff">leftAttribute</font>.<br/>' +
+				'Benutzen Sie die Taste <b>I</b> für die Kategorien <font color="#336600">rightCategory</font> und  <font color="#0000ff">rightAttribute</font>.<br/>' +
 				'Jedes Item gehört nur zu einer Kategorie.<br/><br/>' +
 				'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
 				'Drücken Sie die andere Taste zum Fortfahren.<br/>' + 
@@ -260,12 +260,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'This is the same as the previous part.<br/>' +
-				'Use the <b>E</b> key for <font color="#336600">leftCategory</font> and for <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Use the <b>I</b> key for <font color="#336600">rightCategory</font> and for  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Each item belongs to only one category.<br/><br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'Dies ist der gleiche Teil wie der vorherige.<br/>' +
+				'Drücken Sie die Taste <b>E</b> für <font color="#336600">leftCategory</font> und für <font color="#0000ff">leftAttribute</font>.<br/>' +
+				'Drücken Sie die Taste <b>I</b> für <font color="#336600">rightCategory</font> und für  <font color="#0000ff">rightAttribute</font>.<br/>' +
+				'Jedes Element gehört nur zu einer Kategorie.<br/><br/>' +
+				'<u>Arbeiten Sie so schnell wie möglich,</u> während Sie genau bleiben.<br/><br/></p>' +
+				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit zu starten sind.</font></p></div>',
 			instSecondCombinedTouch:[
 				'<div>',
 					'<p align="center"><u>Part blockNum of nBlocks</u></p>',
