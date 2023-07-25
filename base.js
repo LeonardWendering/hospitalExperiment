@@ -313,29 +313,29 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instThirdCombinedTouch : 'instFirstCombined', //this means that we're going to use the instFirstCombined property for the third combined block as well. You can change that.
 			instFourthCombinedTouch : 'instSecondCombined', //this means that we're going to use the instSecondCombined property for the fourth combined block as well. You can change that.
 
-			showDebriefing:false, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
+			showDebriefing:true, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
 			//Texts for the trials that show the debriefing.
-			preDebriefingText : 'Press space to see your result', //Text in the trial that comes before showing the debriefing.
-			preDebriefingTouchText : 'Touch the bottom green area to see your result', //Touch version for the text in the trial that comes before showing the debriefing.
-			debriefingTextTop : 'Your result:', //Will be shown above the feedback text.
+			preDebriefingText : 'Drücken Sie die Leertaste, um Ihr Ergebnis anzuzeigen', //Text in the trial that comes before showing the debriefing.
+			preDebriefingTouchText : 'Berühren Sie den unteren Teil des Bildschirms, um Ihr Ergebnis anzuzeigen.', //Touch version for the text in the trial that comes before showing the debriefing.
+			debriefingTextTop : 'Ihr Ergebnis:', //Will be shown above the feedback text.
 			//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
 			//In Project Implicit's website, you can see that we added much text to explain that there is still much unknown about the meaning of these results.
 			//We strongly recommend that you provide all these details in the debriefing of the experiment.
-			debriefingTextBottom : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.  Press space to continue.', //Will be shown below the feedback text. 
-            debriefingTextBottomTouch : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.  Touch the green area to continue.',
+			debriefingTextBottom : 'Dieses Ergebnis ist keine endgültige Bewertung Ihrer Einstellungen. Es wird nur zu Bildungszwecken bereitgestellt.  Drücken Sie die Leertaste, um fortzufahren.', //Will be shown below the feedback text. 
+            debriefingTextBottomTouch : 'Dieses Ergebnis ist keine endgültige Bewertung Ihrer Einstellungen. Es wird nur zu Bildungszwecken bereitgestellt.  Berühren Sie den grünen Bereich, um fortzufahren.',
 			//The default feedback messages for each cutoff -
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
 			//and categoryB is the name of the category that is found to be associated with attribute2.
-			fb_strong_Att1WithCatA_Att2WithCatB : 'Your responses suggested a strong automatic preference for categoryB over categoryA.',
-			fb_moderate_Att1WithCatA_Att2WithCatB : 'Your responses suggested a moderate automatic preference for categoryB over categoryA.',
-			fb_slight_Att1WithCatA_Att2WithCatB : 'Your responses suggested a slight automatic preference for categoryB over categoryA.',
-			fb_equal_CatAvsCatB : 'Your responses suggested no automatic preference between categoryA and categoryB.',
+			fb_strong_Att1WithCatA_Att2WithCatB : 'Ihre Antworten deuten auf eine starke Präferenz für categoryB über categoryA hin.',
+			fb_moderate_Att1WithCatA_Att2WithCatB : 'Ihre Antworten deuten auf eine moderate Präferenz für categoryB über categoryA hin.',
+			fb_slight_Att1WithCatA_Att2WithCatB : 'Ihre Antworten deuten auf eine leichte Präferenz für categoryB über categoryA hin.',
+			fb_equal_CatAvsCatB : 'Ihre Antworten deuten auf keine Präferenz für eine der Kategorien hin.',
 
 			//Error messages in the feedback
-			manyErrors: 'There were too many errors made to determine a result.',
-			tooFast: 'There were too many fast trials to determine a result.',
-			notEnough: 'There were not enough trials to determine a result.'
+			manyErrors: 'Es wurden zu viele Fehler gemacht, um ein Ergebnis zu ermitteln.',
+			tooFast: 'Es gab zu viele schnelle Antworten, um ein Ergebnis zu ermitteln.',
+			notEnough: 'Es gab nicht genügend Antworten, um ein Ergebnis zu ermitteln.
 		};
 
 		// extend the "current" object with the default
