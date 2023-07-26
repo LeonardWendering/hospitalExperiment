@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/surfaceOrg.js'], function(APIConstructor, iatExtension){
+define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
 	return iatExtension({
