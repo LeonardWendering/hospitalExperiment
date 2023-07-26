@@ -157,9 +157,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			fontColor : '#000000', //The default color used for printed messages.
 			
 			//Text and style for key instructions displayed about the category labels.
-			leftKeyText : 'Drücken Sie "E" um', 
-			rightKeyText : 'Drücken Sie "I" um', 
-			keysCss : {'font-size':'0.8em', 'font-family':'courier', color:'#000000'},
+			leftKeyText : 'Drücken Sie Taste "E" um', 
+			rightKeyText : 'Drücken Sie Taste "I" um', 
+			keysCss : {'font-size':'0.9em', 'font-family':'courier', color:'#000000'},
 			//Text and style for the separator between the top and bottom category labels.
 			orText : 'oder', 
 			orCss : {'font-size':'1.8em', color:'#000000'},
