@@ -2,6 +2,7 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/base.js
     var API = new APIConstructor();
 
 	return iatExtension({
+		isTouch:true
 		category1 : {
 			name : 'Dunkelhäutige Menschen', //Will appear in the data.
 			title : {
