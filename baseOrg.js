@@ -234,13 +234,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Benutzen Sie die Taste <b>E</b> für die Kategorien <font color="#336600">leftCategory</font> und <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Benutzen Sie die Taste <b>I</b> für die Kategorien <font color="#336600">rightCategory</font> und  <font color="#0000ff">rightAttribute</font>.<br/>' +
+				'Benutzen Sie die Taste <b>E</b> für die Kategorien <font color="#336600">leftCategory</font> oder <font color="#0000ff">leftAttribute</font>.<br/>' +
+				'Benutzen Sie die Taste <b>I</b> für die Kategorien <font color="#336600">rightCategory</font> oder  <font color="#0000ff">rightAttribute</font>.<br/>' +
 				'Jedes Item gehört nur zu einer Kategorie.<br/><br/>' +
 				'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
 				'Drücken Sie die andere Taste zum Fortfahren.<br/>' + 
 				'<u>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>' +
-				'<p align="center">Drücken Sie die <b>Leertaste</b> , wenn Sie bereit zu starten sind.</font></p></div>',
+				'<p align="center">Drücken Sie die <b>Leertaste</b>, wenn Sie bereit zu starten sind.</font></p></div>',
 			instFirstCombinedTouch:[
 				'<div>',
 					'<p align="center">',
@@ -327,15 +327,15 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
 			//and categoryB is the name of the category that is found to be associated with attribute2.
-			fb_strong_Att1WithCatA_Att2WithCatB : 'Your responses suggested a strong automatic preference for categoryB over categoryA.',
-			fb_moderate_Att1WithCatA_Att2WithCatB : 'Your responses suggested a moderate automatic preference for categoryB over categoryA.',
-			fb_slight_Att1WithCatA_Att2WithCatB : 'Your responses suggested a slight automatic preference for categoryB over categoryA.',
-			fb_equal_CatAvsCatB : 'Your responses suggested no automatic preference between categoryA and categoryB.',
+			fb_strong_Att1WithCatA_Att2WithCatB : 'Ihre Antworten deuten auf eine starke implizite Präferenz von categoryB über categoryA hin.',
+			fb_moderate_Att1WithCatA_Att2WithCatB : 'Ihre Antworten deuten auf eine moderate implizite Präferenz von categoryB über categoryA hin.',
+			fb_slight_Att1WithCatA_Att2WithCatB : 'Ihre Antworten deuten auf eine leichte implizite Präferenz von categoryB über categoryA hin.',
+			fb_equal_CatAvsCatB : 'Ihre Antworten deuten auf keine Präferenz für eine der Kategorien hin.',
 
 			//Error messages in the feedback
-			manyErrors: 'There were too many errors made to determine a result.',
-			tooFast: 'There were too many fast trials to determine a result.',
-			notEnough: 'There were not enough trials to determine a result.'
+			manyErrors: 'Es gab zu viele Fehler, um ein Ergebnis zu ermitteln.',
+			tooFast: 'Die Antworten waren zu schnell, um ein Ergebnis zu ermitteln.',
+			notEnough: 'Es gab nicht genügend Versuche, um ein Ergebnis zu ermitteln.'
 		};
 
 		// extend the "current" object with the default
