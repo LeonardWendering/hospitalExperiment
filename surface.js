@@ -3,39 +3,43 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 
 	return iatExtension({
 		category1 : {
-			name : 'Dunkelhäutige Menschen', //Will appear in the data.
+			name : 'Internationale Namen', //Will appear in the data.
 			title : {
-				media : {word : 'Dunkelhäutige Menschen'}, //Name of the category presented in the task.
+				media : {word : 'Internationale Namen'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'black1.jpg'}, 
-    			{image : 'black2.jpg'}, 
-    			{image : 'black3.jpg'}, 
-    			{image : 'black4.jpg'}, 
-    			{image : 'black5.jpg'}, 
-    			{image : 'black6.jpg'}
-			], 
-			//Stimulus css (style)
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+					{word: 'Mehmet'},
+					{word: 'Aaliyah'},
+					{word: 'Hiroshi'},
+					{word: 'Abdel'},
+					{word: 'Rajesh'},
+					{word: 'Jamila'},
+					{word: 'Mei'},
+					{word: 'Amira'}			], 
+			//Stimulus css
+			stimulusCss : {color:'#31940F','font-size':'2.3em'}
+		},
 		},	
 		category2 :	{
-			name : 'Hellhäutige Menschen', //Will appear in the data.
+			name : 'Traditionell deutsche Namen', //Will appear in the data.
 			title : {
-				media : {word : 'Hellhäutige Menschen'}, //Name of the category presented in the task.
+				media : {word : 'Traditionell deutsche Namen'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'2em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'yf1.jpg'}, 
-    			{image : 'yf4.jpg'}, 
-    			{image : 'yf5.jpg'}, 
-    			{image : 'ym2.jpg'}, 
-    			{image : 'ym3.jpg'}, 
-    			{image : 'ym5.jpg'}			], 
+					{word: 'Emma'},
+					{word: 'Felix'},
+					{word: 'Elias'},
+					{word: 'Maximilian'},
+					{word: 'Moritz'},
+					{word: 'Jonas'},
+					{word: 'Hannah'},
+					{word: 'Laura'}			], 
 			//Stimulus css
-			stimulusCss : {color:'#31940F','font-size':'1.8em'}
+			stimulusCss : {color:'#31940F','font-size':'2.3em'}
 		},
 
 		attribute1 :
@@ -80,12 +84,6 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 			//Stimulus css
 			stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 		},
-		leftKeyText : 'Drücke "E" für', 
-		rightKeyText : 'Drücke "I" für',
 
-		base_url : {//Where are your images at?
-			image : 'https://baranan.github.io/minno-tasks/images/'
-		},
-	
 	});
 });
