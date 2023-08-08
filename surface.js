@@ -56,6 +56,7 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 					{word: 'Leid'},
 					{word: 'verletzt'},
 					{word: 'schrecklich'},
+					{word: 'entsetzlich'},
 					{word: 'fies'},
 					{word: 'böse'}
 				],
@@ -84,6 +85,6 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 			stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 		},
 		leftKeyText : 'Drücken Sie "E" für', 
-		rightKeyText : 'Drücken Si"I" für',
+		rightKeyText : 'Drücken Sie "I" für',
 	});
 });
