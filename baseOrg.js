@@ -207,8 +207,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Legen Sie einen linken Finger auf <b>E</b> Tasten, die zu folgender Kategorie gehören: <font color="#336600">leftCategory</font>. ' +
-				'<br/>Legen Sie einen rechten Finger auf <b>I</b> Tasten, die zu folgender Kategorie gehören: <font color="#336600">rightCategory</font>.<br/>' +
+				'Drücken Sie mit einem linken Finger Taste <b>E</b> , um folgende Kategorie auszuwählen: <font color="#336600">leftCategory</font>. ' +
+				'<br/>Drücken Sie mit einem rechten Finger Taste <b>I</b> , um folgende Kategorie auszuwählen: <font color="#336600">rightCategory</font>.<br/>' +
 				'Die Items werden Ihnen einzelnd angezeigt<br/><br/>' +
 				'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
 				'Drücken Sie die andere Seite zum Fortfahren.<br/>' +
