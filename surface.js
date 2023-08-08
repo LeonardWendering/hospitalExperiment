@@ -23,9 +23,9 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 			stimulusCss : {color:'#31940F','font-size':'2.3em'}
 		},
 		category2 :	{
-			name : 'Traditionell deutsche Namen', //Will appear in the data.
+			name : 'Deutsche Namen', //Will appear in the data.
 			title : {
-				media : {word : 'Traditionell deutsche Namen'}, //Name of the category presented in the task.
+				media : {word : 'Deutsche Namen'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'1.8em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
@@ -37,31 +37,31 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 					{word: 'Moritz'},
 					{word: 'Jonas'},
 					{word: 'Hannah'},
-					{word: 'Laura'}			], 
+					{word: 'Laura'}			
+			], 
 			//Stimulus css
 			stimulusCss : {color:'#31940F','font-size':'2.3em'}
 		},
-		attribute1 :
-			{
-				name : 'Negative Wörter',
-				title : {
-					media : {word : 'Negative Wörter'},
-					css : {color:'#0000FF','font-size':'1.8em'},
-					height : 4 //Used to position the "Or" in the combined block.
-				},
-				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'furchtbar'},
-					{word: 'Versagen'},
-					{word: 'Leid'},
-					{word: 'verletzt'},
-					{word: 'schrecklich'},
-					{word: 'entsetzlich'},
-					{word: 'fies'},
-					{word: 'böse'}
-				],
-				//Stimulus css
-				stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+		attribute1 :	{
+			name : 'Negative Wörter',
+			title : {
+				media : {word : 'Negative Wörter'},
+				css : {color:'#0000FF','font-size':'1.8em'},
+				height : 4 //Used to position the "Or" in the combined block.
 			},
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+				{word: 'furchtbar'},
+				{word: 'Versagen'},
+				{word: 'Leid'},
+				{word: 'verletzt'},
+				{word: 'schrecklich'},
+				{word: 'entsetzlich'},
+				{word: 'fies'},
+				{word: 'böse'}
+			],
+			//Stimulus css
+			stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+		},
 		attribute2 :
 		{
 			name : 'Positive Wörter',
@@ -85,5 +85,8 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 		},
 		leftKeyText : 'Drücken Sie "E" für', 
 		rightKeyText : 'Drücken Sie "I" für',
+		base_url : {//Where are your images at?
+			image : 'https://baranan.github.io/minno-tasks/images/'
+		},
 	});
 });
