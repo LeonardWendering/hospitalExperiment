@@ -55,7 +55,6 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 					{word: 'Versagen'},
 					{word: 'Leid'},
 					{word: 'verletzt'},
-					{word: 'furchtbar'},
 					{word: 'schrecklich'},
 					{word: 'fies'},
 					{word: 'böse'}
