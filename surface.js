@@ -84,6 +84,7 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 			//Stimulus css
 			stimulusCss : {color:'#0000FF','font-size':'2.3em'}
 		},
-
+		leftKeyText : 'Drücken Sie "E" für', 
+		rightKeyText : 'Drücken Si"I" für',
 	});
 });
