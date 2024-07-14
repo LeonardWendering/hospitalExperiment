@@ -88,5 +88,32 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 		base_url : {//Where are your images at?
 			image : 'https://baranan.github.io/minno-tasks/images/'
 		},
+		// Add touch-specific instructions in German
+	        instAttributePracticeTouch: '<div><p align="center" style="font-size:20px; font-family:arial">' +
+	            '<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
+	            '<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
+	            'Berühren Sie die <b>linke</b> Seite für Begriffe, die zur Kategorie <font color="#0000ff">leftAttribute</font> gehören.' +
+	            '<br/>Berühren Sie die <b>rechte</b> Seite für Begriffe, die zur Kategorie <font color="#0000ff">rightAttribute</font> gehören.<br/><br/>' +
+	            'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
+	            'Berühren Sie die andere Seite zum Fortfahren.<br/>' +
+	            '<u>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>'+
+	            '<p align="center">Berühren Sie den <b>unteren</b> grünen Bereich, um zu beginnen.</font></p></div>',
+	
+	        instCategoriesPracticeTouch: '<div><p align="center" style="font-size:20px; font-family:arial">' +
+	            '<font color="#000000"><u>Teil blockNum von nBlocks </u><br/><br/></p>' +
+	            '<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
+	            'Berühren Sie die <b>linke</b> Seite für Begriffe, die zur Kategorie <font color="#336600">leftCategory</font> gehören. ' +
+	            '<br/>Berühren Sie die <b>rechte</b> Seite für Begriffe, die zur Kategorie <font color="#336600">rightCategory</font> gehören.<br/>' +
+	            'Die Begriffe werden einzeln angezeigt.<br/><br/>' +
+	            'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
+	            'Berühren Sie die andere Seite zum Fortfahren.<br/>' +
+	            '<u>Arbeiten Sie so schnell wie möglich</u> und bleiben dabei exakt.<br/><br/></p>'+
+	            '<p align="center">Berühren Sie den <b>unteren</b> grünen Bereich, um zu beginnen.</font></p></div>',
+	
+	        // Add similar touch instructions for other blocks in German
+	
+	        // Update text elements
+	        leftKeyText: 'Berühren Sie LINKS für', 
+	        rightKeyText: 'Berühren Sie RECHTS für',
 	});
 });
