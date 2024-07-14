@@ -11,8 +11,40 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 	{
 		var API = new APIConstructor();		
 		var scorer = new Scorer();
-        var piCurrent = API.getCurrent();
+        	var piCurrent = API.getCurrent();
+
+		// Check if the device supports touch
+		var isTouch = 'ontouchstart' in window || navigator.maxTouchPoints;
 		
+		// Extend the current object with default options and user-provided options
+		_.extend(piCurrent, _.defaults(options, iatObj));
+		
+		// Modify the canvas settings for touch devices
+		if (isTouch) {
+		piCurrent.canvas.maxWidth = window.innerWidth;
+		piCurrent.canvas.proportions = 0.8;
+		}
+
+		// Modify input methods for touch devices
+		var leftInput = isTouch ? 
+		    {handle:'left',on:'click', stimHandle:'left'} : 
+		    {handle:'left',on:'keypressed',key:'e'};
+		var rightInput = isTouch ? 
+		    {handle:'right',on:'click', stimHandle:'right'} : 
+		    {handle:'right',on:'keypressed',key:'i'};
+		var proceedInput = isTouch ? 
+		    {handle:'space',on:'bottomTouch', css:piCurrent.bottomTouchCss} : 
+		    {handle:'space',on:'space'};
+		
+		// Update instructions for touch devices
+		if (isTouch) {
+		    piCurrent.instAttributePractice = piCurrent.instAttributePracticeTouch;
+		    piCurrent.instCategoriesPractice = piCurrent.instCategoriesPracticeTouch;
+		    piCurrent.instFirstCombined = piCurrent.instFirstCombinedTouch;
+		    piCurrent.instSecondCombined = piCurrent.instSecondCombinedTouch;
+		    piCurrent.instSwitchCategories = piCurrent.instSwitchCategoriesTouch;
+		}
+
 
 		//Here we set the settings of our task. 
 		//Read the comments to learn what each parameters means.
