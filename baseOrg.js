@@ -13,47 +13,6 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		var scorer = new Scorer();
         	var piCurrent = API.getCurrent();
 
-		// Check if the device supports touch
-		var isTouch = 'ontouchstart' in window || navigator.maxTouchPoints;
-		
-		// Extend the current object with default options and user-provided options
-		_.extend(piCurrent, _.defaults(options, iatObj));
-		
-		// Modify the canvas settings for touch devices
-		if (isTouch) {
-		piCurrent.canvas.maxWidth = window.innerWidth;
-		piCurrent.canvas.proportions = 0.8;
-		}
-
-		// Modify input methods for touch devices
-		var leftInput = isTouch ? 
-		    {handle:'left',on:'click', stimHandle:'left'} : 
-		    {handle:'left',on:'keypressed',key:'e'};
-		var rightInput = isTouch ? 
-		    {handle:'right',on:'click', stimHandle:'right'} : 
-		    {handle:'right',on:'keypressed',key:'i'};
-		var proceedInput = isTouch ? 
-		    {handle:'space',on:'bottomTouch', css:piCurrent.bottomTouchCss} : 
-		    {handle:'space',on:'space'};
-		
-		// Update instructions for touch devices
-		if (isTouch) {
-		    piCurrent.instAttributePractice = piCurrent.instAttributePracticeTouch;
-		    piCurrent.instCategoriesPractice = piCurrent.instCategoriesPracticeTouch;
-		    piCurrent.instFirstCombined = piCurrent.instFirstCombinedTouch;
-		    piCurrent.instSecondCombined = piCurrent.instSecondCombinedTouch;
-		    piCurrent.instSwitchCategories = piCurrent.instSwitchCategoriesTouch;
-		    }
-		
-		    // Update other text elements
-		piCurrent.remindErrorTextTouch = '<p align="center" style="font-size:1.4em; font-family:arial">' +
-		    'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
-		    'Berühren Sie die andere Seite zum Fortfahren.<p/>';
-		
-		piCurrent.finalTouchText = 'Berühren Sie den unteren grünen Bereich, um mit der nächsten Aufgabe fortzufahren.';
-
-
-
 		//Here we set the settings of our task. 
 		//Read the comments to learn what each parameters means.
 		//You can also do that from the outside, with a dedicated jsp file.
@@ -61,7 +20,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		{
 			fullscreen:false, //Should we show the task in full screen? A Qualtrics-only feature because in the usual Minno, we can go full-screen right at the beginning of the study.
         
-			isTouch:false, //Set whether the task is on a touch device.
+			isTouch:true, //Set whether the task is on a touch device.
 			//Set the canvas of the task
 			canvas : {
 				maxWidth: 725,
