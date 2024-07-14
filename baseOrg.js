@@ -43,7 +43,15 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		    piCurrent.instFirstCombined = piCurrent.instFirstCombinedTouch;
 		    piCurrent.instSecondCombined = piCurrent.instSecondCombinedTouch;
 		    piCurrent.instSwitchCategories = piCurrent.instSwitchCategoriesTouch;
-		}
+		    }
+		
+		    // Update other text elements
+		piCurrent.remindErrorTextTouch = '<p align="center" style="font-size:1.4em; font-family:arial">' +
+		    'Wenn Sie einen Fehler machen, wird ein rotes <font color="#ff0000"><b>X</b></font> erscheinen. ' +
+		    'Berühren Sie die andere Seite zum Fortfahren.<p/>';
+		
+		piCurrent.finalTouchText = 'Berühren Sie den unteren grünen Bereich, um mit der nächsten Aufgabe fortzufahren.';
+
 
 
 		//Here we set the settings of our task. 
