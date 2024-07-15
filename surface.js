@@ -55,7 +55,7 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 				{word: 'Leid'},
 				{word: 'verletzt'},
 				{word: 'schrecklich'},
-				{word: 'entsetzlich'},
+				{word: 'schlecht'},
 				{word: 'fies'},
 				{word: 'böse'}
 			],
@@ -73,7 +73,7 @@ define(['pipAPI', 'https://leonardwendering.github.io/hospitalExperiment/baseOrg
 			stimulusMedia : [ //Stimuli content as PIP's media objects
 				{word: 'lachen'},
 				{word: 'fröhlich'},
-				{word: 'herrlich'},
+				{word: 'schön'},
 				{word: 'Freude'},
 				{word: 'wunderbar'},
 				{word: 'Frieden'},
