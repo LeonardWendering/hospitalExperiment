@@ -32,9 +32,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			},
 			//When scoring, we will consider the compatible condition the pairing condition that requires response with one key to [category1,attribute1] and the other key to [category2,attribute2]
 			category1 : {
-				name : 'Dunkelhäutige Menschen', //Will appear in the data and in the default feedback message.
+				name : 'Nicht typisch deutsche Namen', //Will appear in the data and in the default feedback message.
 				title : {
-					media : {word : 'Dunkelhäutige Menschen'}, //Name of the category presented in the task.
+					media : {word : 'Nicht typisch deutsche Namen'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				},
@@ -50,9 +50,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimulusCss : {color:'#336600','font-size':'2.3em'}
 			},
 			category2 :	{
-				name : 'Hellhäutige Menschen', //Will appear in the data and in the default feedback message.
+				name : 'Typisch deutsche Namen', //Will appear in the data and in the default feedback message.
 				title : {
-					media : {word : 'Hellhäutige Menschen'}, //Name of the category presented in the task.
+					media : {word : 'Typisch deutsche Namen'}, //Name of the category presented in the task.
 					css : {color:'#336600','font-size':'1.8em'}, //Style of the category title.
 					height : 4 //Used to position the "Or" in the combined block.
 				},
@@ -77,7 +77,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
 					{word: 'furchtbar'},
-					{word: 'Versagen'},
+					{word: 'versagen'},
 					{word: 'Leid'},
 					{word: 'verletzt'},
 					{word: 'furchtbar'},
@@ -99,10 +99,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
 					{word: 'lachen'},
 					{word: 'fröhlich'},
-					{word: 'herrlich'},
+					{word: 'schön'},
 					{word: 'Freude'},
 					{word: 'wunderbar'},
-					{word: 'Frieden'},
+					{word: 'entspannt'},
 					{word: 'Vergnügen'},
 					{word: 'Liebe'}
 				],
@@ -161,7 +161,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			keysCss : {'font-size':'0.9em', 'font-family':'courier', color:'#000000'},
 			//Text and style for the separator between the top and bottom category labels.
 			orText : 'oder', 
-			orCss : {'font-size':'1.8em', color:'#000000'},
+			orCss : {'font-size':'1.8em', color:'#418ec4'},
 			
 			instWidth : 99, //The width of the instructions stimulus
             
@@ -193,13 +193,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Put a left finger over the the <b>left</b> green area for items that belong to the category <font color="#0000ff">leftAttribute</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/>',
-						'Items will appear one at a time.<br/>',
+						'Halten Sie den linken Finger über die <b>linke</b> grüne Fläche für Elemente, die zu dieser Kategorie gehören <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Halten Sie den rechten Finger über die <b>linke</b> grüne Fläche für Elemente, die zu dieser Kategorie gehören <font color="#0000ff">rightAttribute</font>.<br/>',
+						'Die Elemente werden nacheinander angezeigt.<br/>',
 						'<br/>',
-						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.',
+						'Wenn Sie einen Fehler machen, wird ein roter <font color="#ff0000"><b>X</b></font> erscheinen. Berühren Sie dann die andere Seite. <u>Arbeiten Sie so schnell wie möglich</u> und trotzdem genau.',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Berühren Sie den <b>unteren </b> grünen Bereich, um zu beginnen.</p>',
 				'</div>'
 			].join('\n'),
 
@@ -220,13 +220,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Put a left finger over the <b>left</b> green area for items that belong to the category <font color="#336600">leftCategory</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#336600">rightCategory</font>.<br/>',
-						'Items will appear one at a time.<br/>',
+						'Halten Sie den linken Finger über die <b>linke</b> grüne Fläche für Elemente, die zu dieser Kategorie gehören <font color="#336600">leftCategory</font>.<br/>',
+						'Halten Sie den rechten Finger über die <b>rechte</b> grüne Fläche für Elemente, die zu dieser Kategorie gehören <font color="#336600">rightCategory</font>.<br/>',
+						'Die Elemente werden nacheinander angezeigt.<br/>',
 						'<br/>',
-						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.',
+						'Wenn Sie einen Fehler machen, wird ein roter <font color="#ff0000"><b>X</b></font> will appear. Berühren Sie dann die andere Seite. <u>Arbeiten Sie so schnell wie möglich</u> und trotzdem genau.',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Berühren Sie den <b>unteren </b> grünen Bereich, um zu beginnen.</p>',
 				'</div>'
 			].join('\n'),
 
@@ -248,11 +248,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<br/>',
 					'<br/>',
 					'<p align="left" style="margin-left:5px">',
-						'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items and for <font color="#0000ff">leftAttribute</font>.</br>',
-						'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items and for <font color="#0000ff">rightAttribute</font>.</br>',
-							'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.</br>',
+						'Legen Sie den linken Finger auf die <b>linke</b> grüne Fläche für <font color="#336600">leftCategory</font> Elemente und für <font color="#0000ff">leftAttribute</font>.</br>',
+						'Legen Sie den rechten Finger auf die <b>rechte</b> grüne Fläche für <font color="#336600">rightCategory</font> Elemente und für <font color="#0000ff">rightAttribute</font>.</br>',
+							'Wenn Sie einen Fehler machen, wird ein roter <font color="#ff0000"><b>X</b></font> erscheinen. Berühren Sie dann die andere Seite. <u>Arbeiten Sie so schnell wie möglich</u> und trotzdem genau.</br>',
 						'</p>',
-						'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+						'<p align="center">Berühren Sie den <b>unteren </b> grünen Bereich, um zu beginnen.</p>',
 				'</div>'
 			].join('\n'),
 
@@ -272,12 +272,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<br/>',
 
 					'<p align="left" style="margin-left:5px">',
-						'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items and for <font color="#0000ff">leftAttribute</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items and for <font color="#0000ff">rightAttribute</font>.<br/>',
+						'Legen Sie den linken Finger auf die <b>linke</b> grüne Fläche für <font color="#336600">leftCategory</font> Elemente und für <font color="#0000ff">leftAttribute</font>.<br/>',
+						'Legen Sie den rechten Finger auf die <b>rechte</b> grüne Fläche für <font color="#336600">rightCategory</font> Elemente und für <font color="#0000ff">rightAttribute</font>.<br/>',
 						'<br/>',
-						'<u>Go as fast as you can</u> while being accurate.<br/>',
+						'<u>Arbeiten Sie so schnell wie möglich</u> und trotzdem genau.<br/>',
 					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+					'<p align="center">Berühren Sie den <b>unteren </b> grünen Bereich, um zu beginnen.</p>',
 				'</div>'
 			].join('\n'),
 
@@ -297,13 +297,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
 						'Watch out, the labels have changed position!<br/>',
-							'Put a left finger over the <b>left</b> green area for <font color="#336600">leftCategory</font> items.<br/>',
-							'Put a right finger over the <b>right</b> green area for <font color="#336600">rightCategory</font> items.<br/>',
-							'Items will appear one at a time.',
+							'Legen Sie den linken Finger auf die <b>linke</b> grüne Fläche für <font color="#336600">leftCategory</font> Elemente.<br/>',
+							'Legen Sie den rechten Finger auf die <b>rechte</b> grüne Fläche für <font color="#336600">rightCategory</font> Elemente.<br/>',
+							'Die Elemente werden nacheinander angezeigt.',
 							'<br/>',
-							'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.<br/>',
+							'Wenn Sie einen Fehler machen, wird ein roter <font color="#ff0000"><b>X</b></font> will appear. Berühren Sie dann die andere Seite. <u>Arbeiten Sie so schnell wie möglich</u> und trotzdem genau.<br/>',
 						'</p>',
-						'<p align="center">Touch the <b>lower </b> green area to start.</p>',
+						'<p align="center">Berühren Sie den <b>unteren </b> grünen Bereich, um zu beginnen.</p>',
 				'</div>'
 			].join('\n'),
 
