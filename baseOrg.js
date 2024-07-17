@@ -224,7 +224,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 						'Halten Sie den rechten Finger über die <b>rechte</b> grüne Fläche für Elemente, die zu dieser Kategorie gehören <font color="#336600">rightCategory</font>.<br/>',
 						'Die Elemente werden nacheinander angezeigt.<br/>',
 						'<br/>',
-						'Wenn Sie einen Fehler machen, wird ein roter <font color="#ff0000"><b>X</b></font> will appear. Berühren Sie dann die andere Seite. <u>Arbeiten Sie so schnell wie möglich</u> und trotzdem genau.',
+						'Wenn Sie einen Fehler machen, wird ein roter <font color="#ff0000"><b>X</b></font> erscheinen. Berühren Sie dann die andere Seite. <u>Arbeiten Sie so schnell wie möglich</u> und trotzdem genau.',
 					'</p>',
 					'<p align="center">Berühren Sie den <b>unteren </b> grünen Bereich, um zu beginnen.</p>',
 				'</div>'
@@ -301,7 +301,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 							'Legen Sie den rechten Finger auf die <b>rechte</b> grüne Fläche für <font color="#336600">rightCategory</font> Elemente.<br/>',
 							'Die Elemente werden nacheinander angezeigt.',
 							'<br/>',
-							'Wenn Sie einen Fehler machen, wird ein roter <font color="#ff0000"><b>X</b></font> will appear. Berühren Sie dann die andere Seite. <u>Arbeiten Sie so schnell wie möglich</u> und trotzdem genau.<br/>',
+							'Wenn Sie einen Fehler machen, wird ein roter <font color="#ff0000"><b>X</b></font> erscheinen. Berühren Sie dann die andere Seite. <u>Arbeiten Sie so schnell wie möglich</u> und trotzdem genau.<br/>',
 						'</p>',
 						'<p align="center">Berühren Sie den <b>unteren </b> grünen Bereich, um zu beginnen.</p>',
 				'</div>'
