@@ -296,7 +296,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					'</p>',
 					'<p align="left" style="margin-left:5px">',
 						'<br/>',
-						'Watch out, the labels have changed position!<br/>',
+						'Achtung, die Seiten wurden vertauscht!<br/>',
 							'Legen Sie den linken Finger auf die <b>linke</b> grüne Fläche für <font color="#336600">leftCategory</font> Elemente.<br/>',
 							'Legen Sie den rechten Finger auf die <b>rechte</b> grüne Fläche für <font color="#336600">rightCategory</font> Elemente.<br/>',
 							'Die Elemente werden nacheinander angezeigt.',
